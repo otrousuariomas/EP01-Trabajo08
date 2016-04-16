@@ -134,11 +134,11 @@ return comparacion;
 }
 
 
-$("#inicio").click(function () {
+$("#jugar").click(function () {
   evento++;
   nom_div("dificultad").innerHTML = "dificultad: "+ dificultad;
   pag(3);
   inicgame();
-  $("#inicio").fadeOut();
+  $("#jugar").fadeOut();
 })
 });
