@@ -65,17 +65,18 @@ function inicgame() {
   {
       return document.getElementById(div);
   }
-function randomC() {
+function randomColor() {
   return 'red';
 }
 var contA=0;var tiempoe;
+var animacion="flip";
 function sec()
 {
   if (contA <=random.length)
   {
     tiempoe= setInterval(function()
      {
-        $("#_"+random[contA]).css("background-color", randomC());
+        $("#_"+random[contA]).css("background-color", randomColor());
         contA++;
         sec2();
       },300);
@@ -108,7 +109,7 @@ function sec2()
   {
     setInterval(function ()
     {
-      $("#_"+random[contB]).css("background-color","white");
+      $("#_"+random[contB]).removeClass("animated"+animacion).css("background-color","white");
       contB++;
       if (contB===random.length)
       {
@@ -134,11 +135,11 @@ return comparacion;
 }
 
 
-$("#jugar").click(function () {
+$("#inicio").click(function () {
   evento++;
   nom_div("dificultad").innerHTML = "dificultad: "+ dificultad;
   pag(3);
   inicgame();
-  $("#jugar").fadeOut();
+  $("#inicio").fadeOut();
 })
 });
