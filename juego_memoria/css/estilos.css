@@ -1,0 +1,18 @@
+.celda
+{
+
+  border: 10px solid black;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-top: -10px;
+  margin-left:-10px;
+  background-color: white;
+
+}
+
+#dificultad
+{
+  font-size: 25px;
+  margin-bottom: 40px;
+}
